@@ -38,10 +38,11 @@ class JadwalMateri extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['jadwalID', 'kelasID', 'mapelID', 'judul', 'tanggal', 'noSesi', 'sesiAwal', 'sesiAkhir', 'pengajar'], 'required'],
+            [['jadwalID', 'kelasID', 'mapelID', 'noBab', 'judul', 'tanggal', 'noSesi', 'sesiAwal', 'sesiAkhir', 'pengajar'], 'required'],
             [['tanggal', 'sesiAwal', 'sesiAkhir'], 'safe'],
             [['jadwalID', 'kelasID'], 'string', 'max' => 5],
             [['mapelID', 'noSesi'], 'string', 'max' => 3],
+            [['noBab'], 'string', 'max' => 2],
             [['judul'], 'string', 'max' => 35],
             [['pengajar', 'pengganti'], 'string', 'max' => 25]
         ];
@@ -56,7 +57,8 @@ class JadwalMateri extends \yii\db\ActiveRecord
             'jadwalID' => 'Jadwal ID',
             'kelasID' => 'Kelas ID',
             'mapelID' => 'Mapel ID',
-            'noBab' => 'noBab',
+            'noBab' => 'No Bab',
+            'judul' => 'Judul',
             'tanggal' => 'Tanggal',
             'noSesi' => 'No Sesi',
             'sesiAwal' => 'Sesi Awal',
@@ -87,11 +89,12 @@ class JadwalMateri extends \yii\db\ActiveRecord
      */
     public function getMapel()
     {
-        return $this->hasOne(Materi::className(), ['mapelID' => 'mapelID', 'noBab' => 'noBab']);
+        return $this->hasMany(Materi::className(), ['mapelID' => 'mapelID', 'noBab' => 'noBab']);
     }
 
-/*public function getMateri(){
-    return $this->hasOne(MATERI::className(), ['MATERI.mapelId' => 'JADWAL_INSTANCE.mapelId']);
+   /* public function getJudul(){
+        return $this->hasOne(Materi::className(), ['mapelID' => 'mapelID', 'judul' => 'judul']
+            );
     }*/
 
 

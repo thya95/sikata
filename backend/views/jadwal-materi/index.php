@@ -35,8 +35,9 @@ $this->params['breadcrumbs'][] = $this->title;
              'sesiAkhir',
             // 'pengajar',
             // 'pengganti',
-
+            
             ['class' => 'yii\grid\ActionColumn'],
+
         ],
     ]); ?>
 
