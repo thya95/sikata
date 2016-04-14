@@ -1935,3 +1935,113 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1460639847.777
     'REQUEST_TIME' => 1460639847
 ]
+2016-04-14 15:38:56 [::1][3][pb9sq5fah10hq8i07tqvv4f0g1][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'where clause'' in C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\Command.php:840
+Stack trace:
+#0 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\Command.php(840): PDOStatement->execute()
+#1 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#4 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#5 C:\xampp\htdocs\sikata\common\models\User.php(224): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 C:\xampp\htdocs\sikata\frontend\views\layouts\main.php(58): common\models\User::isUserSiswa('<span class="st...')
+#7 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(325): require('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#9 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Controller.php(392): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#10 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\Controller->renderContent('<span class="st...')
+#11 C:\xampp\htdocs\sikata\frontend\controllers\SiteController.php(91): yii\base\Controller->render('<span class="st...')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#14 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#15 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#16 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#17 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\xampp\htdocs\sikata\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role' in 'where clause'
+The SQL being executed was: SELECT * FROM `user` WHERE (`username`='fad') AND (`role`=40)' in C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\Command.php(855): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#3 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#4 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#5 C:\xampp\htdocs\sikata\common\models\User.php(224): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 C:\xampp\htdocs\sikata\frontend\views\layouts\main.php(58): common\models\User::isUserSiswa('<span class="st...')
+#7 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(325): require('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#9 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Controller.php(392): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#10 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\Controller->renderContent('<span class="st...')
+#11 C:\xampp\htdocs\sikata\frontend\controllers\SiteController.php(91): yii\base\Controller->render('<span class="st...')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#14 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#15 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#16 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#17 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 C:\xampp\htdocs\sikata\frontend\web\index.php(18): yii\base\Application->run()
+#19 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role' in 'where clause'
+)
+
+2016-04-14 15:38:55 [::1][3][pb9sq5fah10hq8i07tqvv4f0g1][info][application] $_COOKIE = [
+    'PHPSESSID' => 'pb9sq5fah10hq8i07tqvv4f0g1'
+    '_csrf' => '08623ffc95882c5324c13315e9ddde943ae2b9c45688098cf9e7f26891bbfb7aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ue845oBhlLAxuPGbp6sdQpd-KVWAZ1kj\";}'
+    '_identity' => '7cb2f3164a67343473b17562c33c024bbe6f0d973b4fcc64335913062e8aa141a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"tn7h9GI0zHb2cNqX3DwGBj0g2VBCPHPv\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php?r=site%2Flogout'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=pb9sq5fah10hq8i07tqvv4f0g1; _csrf=08623ffc95882c5324c13315e9ddde943ae2b9c45688098cf9e7f26891bbfb7aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ue845oBhlLAxuPGbp6sdQpd-KVWAZ1kj%22%3B%7D; _identity=7cb2f3164a67343473b17562c33c024bbe6f0d973b4fcc64335913062e8aa141a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22tn7h9GI0zHb2cNqX3DwGBj0g2VBCPHPv%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Skype\\Phone\\;C:\\xampp\\php;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '58166'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/sikata/frontend/web/index.php'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460641135.121
+    'REQUEST_TIME' => 1460641135
+]
