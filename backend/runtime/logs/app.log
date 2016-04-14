@@ -421,3 +421,141 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1460624058.476
     'REQUEST_TIME' => 1460624058
 ]
+2016-04-14 14:49:46 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'yii\jui\DatePicker' not found' in C:\xampp\htdocs\sikata\backend\views\jadwal-materi\_search.php:29
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-14 14:49:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'jadwal-materi'
+]
+
+$_COOKIE = [
+    '_identity' => '82268602b6b876dbf979f15955619b81e2b801ccefd8c7332e5540f1d22cf6c3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"tn7h9GI0zHb2cNqX3DwGBj0g2VBCPHPv\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=82268602b6b876dbf979f15955619b81e2b801ccefd8c7332e5540f1d22cf6c3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22tn7h9GI0zHb2cNqX3DwGBj0g2VBCPHPv%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Skype\\Phone\\;C:\\xampp\\php;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sikata/backend/web/index.php'
+    'REMOTE_PORT' => '49271'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=jadwal-materi'
+    'REQUEST_URI' => '/sikata/backend/web/index.php?r=jadwal-materi'
+    'SCRIPT_NAME' => '/sikata/backend/web/index.php'
+    'PHP_SELF' => '/sikata/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460638186.029
+    'REQUEST_TIME' => 1460638186
+]
+2016-04-14 14:58:43 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: C:\xampp\htdocs\sikata/vendor\bower/jquery-ui' in C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\web\AssetBundle.php(179): yii\web\AssetManager->publish('C:\xampp\htdocs...', Array)
+#1 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\jui\JuiAsse...', Array, true)
+#3 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\jui\JuiAsse...')
+#4 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('yii\jui\JuiAsse...')
+#5 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2-jui\DatePicker.php(159): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Widget.php(98): yii\jui\DatePicker->run()
+#7 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\widgets\ActiveField.php(671): yii\base\Widget::widget(Array)
+#8 C:\xampp\htdocs\sikata\backend\views\jadwal-materi\_search.php(32): yii\widgets\ActiveField->widget('yii\jui\DatePic...', Array)
+#9 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(325): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xampp\htdocs...', Array)
+#11 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\xampp\htdocs...', Array, NULL)
+#12 C:\xampp\htdocs\sikata\backend\views\jadwal-materi\index.php(16): yii\base\View->render('_search', Array)
+#13 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(325): require('C:\xampp\htdocs...')
+#14 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\xampp\htdocs...', Array)
+#15 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\xampp\htdocs...', Array, Object(backend\controllers\JadwalMateriController))
+#16 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\JadwalMateriController))
+#17 C:\xampp\htdocs\sikata\backend\controllers\JadwalMateriController.php(50): yii\base\Controller->render('index', Array)
+#18 [internal function]: backend\controllers\JadwalMateriController->actionIndex()
+#19 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#22 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('jadwal-materi', Array)
+#23 C:\xampp\htdocs\sikata\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\sikata\backend\web\index.php(18): yii\base\Application->run()
+#25 {main}
+2016-04-14 14:58:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'jadwal-materi'
+]
+
+$_COOKIE = [
+    '_identity' => '82268602b6b876dbf979f15955619b81e2b801ccefd8c7332e5540f1d22cf6c3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"tn7h9GI0zHb2cNqX3DwGBj0g2VBCPHPv\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=82268602b6b876dbf979f15955619b81e2b801ccefd8c7332e5540f1d22cf6c3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22tn7h9GI0zHb2cNqX3DwGBj0g2VBCPHPv%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Skype\\Phone\\;C:\\xampp\\php;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sikata/backend/web/index.php'
+    'REMOTE_PORT' => '57698'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=jadwal-materi'
+    'REQUEST_URI' => '/sikata/backend/web/index.php?r=jadwal-materi'
+    'SCRIPT_NAME' => '/sikata/backend/web/index.php'
+    'PHP_SELF' => '/sikata/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460638720.93
+    'REQUEST_TIME' => 1460638720
+]

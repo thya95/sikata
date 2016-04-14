@@ -5,6 +5,7 @@ namespace backend\controllers;
 use Yii;
 use app\models\JadwalMateri;
 use backend\models\JadwalMateriSearch;
+use backend\models\Materi;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -34,6 +35,14 @@ class JadwalMateriController extends Controller
     {
         $searchModel = new JadwalMateriSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        
+
+         /*$dataProvider = new SqlDataProvider([
+            'sql' => "SELECT * FROM JADWAL_MATERI A, MATERI B WHERE A.mapelID=B.mapelID AND A.noBab = B.noBab",
+
+        ]);*/
+
 
         return $this->render('index', [
             'searchModel' => $searchModel,

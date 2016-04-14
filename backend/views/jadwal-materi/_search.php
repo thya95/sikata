@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-//use kartik\date\DatePicker;
+
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\JadwalMateriSearch */
@@ -22,10 +22,16 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'mapelID') ?>
 
-    <?= $form->field($model, 'noBab') ?>-->
-
-    <?= $form->field($model, 'tanggal') ?>
+    <?= $form->field($model, 'noBab') ?>
     
+    <?= $form->field($model, 'tanggal') ?>-->
+    <?= $form->field($model, 'tanggal')->widget(
+        \yii\jui\DatePicker::className(), [
+        'dateFormat' => 'yyyy-MM-dd',
+        
+        ])
+    ?>
+
     <?php // echo $form->field($model, 'noSesi') ?>
 
     <?php // echo $form->field($model, 'sesiAwal') ?>
@@ -38,7 +44,7 @@ use yii\widgets\ActiveForm;
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <!--<?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>-->
+        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

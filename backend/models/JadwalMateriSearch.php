@@ -75,6 +75,7 @@ class JadwalMateriSearch extends JadwalMateri
             ->andFilterWhere(['like', 'kelasID', $this->kelasID])
             ->andFilterWhere(['like', 'mapelID', $this->mapelID])
             ->andFilterWhere(['like', 'noBab', $this->noBab])
+            
             ->andFilterWhere(['like', 'noSesi', $this->noSesi])
             ->andFilterWhere(['like', 'pengajar', $this->pengajar])
             ->andFilterWhere(['like', 'pengganti', $this->pengganti]);
