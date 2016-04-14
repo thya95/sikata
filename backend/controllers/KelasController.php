@@ -4,7 +4,12 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Kelas;
+use common\models\Siswa;
+use common\models\User;
 use backend\models\KelasSearch;
+use backend\models\SiswaSearch;
+use yii\data\ActiveDataProvider;
+use yii\data\SqlDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -38,6 +43,7 @@ class KelasController extends Controller
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+
         ]);
     }
 
@@ -48,9 +54,27 @@ class KelasController extends Controller
      */
     public function actionView($id)
     {
+        //$searchModel = new SiswaSearch();
+
+        /*
+        $dataProvider = new ActiveDataProvider([
+            'query' => User::find()->with('Siswa')->where(['kelasID'=>$id]),
+        ]);
+        */
+
+        $dataProvider = new SqlDataProvider([
+            'sql' => "SELECT * FROM USER A, SISWA B WHERE A.ID=B.NP AND B.kelasID = " . "'$id'",
+
+        ]);
+
+
+        //$dataProvider = $searchModel->search(Yii::$app->request->queryParams, $id);
+
         return $this->render('view', [
             'model' => $this->findModel($id),
-            'model-siswa' =>
+            //'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+//            'model-siswa' =>
         ]);
     }
 

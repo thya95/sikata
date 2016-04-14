@@ -1,6 +1,9 @@
 html,
 body {
     height: 100%;
+    background-image: url("EF.jpg");
+    background-size: 1600px 1000px;
+    background-repeat: no-repeat;
 }
 
 .wrap {
@@ -16,19 +19,26 @@ body {
 
 .footer {
     height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
+    background-color: black;
+    border-top: 1px solid black;
     padding-top: 20px;
 }
 
 .jumbotron {
     text-align: center;
-    background-color: transparent;
+    font-size:72px;
+    opacity:0.5px;
+   
 }
 
+h1 {
+    font-size:54px;
+}
 .jumbotron .btn {
-    font-size: 21px;
+    font-size: 30px;
     padding: 14px 24px;
+    color:black;
+    opacity:0.5px;
 }
 
 .not-set {

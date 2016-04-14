@@ -62,6 +62,44 @@ class LoginForm extends Model
         }
     }
 
+     public function loginAdmin()
+    {
+        if ($this->validate() && User::isUserAdmin($this->username)) {
+            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+        } else {
+            return false;
+        }
+    }
+    
+    public function loginKorset2()
+    {
+        if ($this->validate() && User::isUserKorset2($this->username)) {
+            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+        } else {
+            return false;
+        }
+    }
+    
+    public function loginBinglas()
+    {
+        if ($this->validate() && User::isUserBinglas($this->username)) {
+            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+        } else {
+            return false;
+        }
+    }
+    
+    public function loginSiswa()
+    {
+        if ($this->validate() && User::isUserSiswa($this->username)) {
+            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+        } else {
+            return false;
+        }
+    }
+
+    
+
     /**
      * Finds user by [[username]]
      *

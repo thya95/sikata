@@ -8,6 +8,7 @@
 
 #wrapper {
     padding-left: 0;
+
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -25,6 +26,7 @@
     width: 0;
     height: 100%;
     margin-left: -250px;
+    margin-top: 70px;
     overflow-y: auto;
     background: black;
     -webkit-transition: all 0.5s ease;
@@ -106,7 +108,7 @@
     }
 
     #sidebar-wrapper {
-        width: 130px;
+        width: 150px;
     }
 
     #wrapper.toggled #sidebar-wrapper {

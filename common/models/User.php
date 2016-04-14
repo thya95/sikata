@@ -25,6 +25,10 @@ class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
     const STATUS_ACTIVE = 10;
+    const ROLE_KORSET1 = 20;
+    const ROLE_KORSET2 = 30;
+    const ROLE_SISWA = 40;
+    const ROLE_BINGLAS = 50;
 
     /**
      * @inheritdoc
@@ -52,6 +56,8 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            ['role', 'default', 'value' => 20],
+            ['role', 'in', 'range' => [self::ROLE_KORSET1, self::ROLE_KORSET2, self::ROLE_BINGLAS, self::ROLE_SISWA]],
         ];
     }
 
@@ -88,7 +94,7 @@ class User extends ActiveRecord implements IdentityInterface
      * @param string $token password reset token
      * @return static|null
      */
-    /*public static function findByPasswordResetToken($token)
+    public static function findByPasswordResetToken($token)
     {
         if (!static::isPasswordResetTokenValid($token)) {
             return null;
@@ -98,7 +104,7 @@ class User extends ActiveRecord implements IdentityInterface
             'password_reset_token' => $token,
             'status' => self::STATUS_ACTIVE,
         ]);
-    }*/
+    }
 
     /**
      * Finds out if password reset token is valid
@@ -185,4 +191,42 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+
+    public static function isUserAdmin($username)
+    {
+      if (static::findOne(['username' => $username, 'role' => self::ROLE_KORSET1])){
+             return true;
+      } else {
+             return false;
+      }
+    }
+    
+     public static function isUserKorset2($username)
+    {
+      if (static::findOne(['username' => $username, 'role' => self::ROLE_KORSET2])){
+             return true;
+      } else {
+             return false;
+      }
+    }
+    
+     public static function isUserBinglas($username)
+    {
+      if (static::findOne(['username' => $username, 'role' => self::ROLE_BINGLAS])){
+             return true;
+      } else {
+             return false;
+      }
+    }
+    
+     public static function isUserSiswa($username)
+    {
+      if (static::findOne(['username' => $username, 'role' => self::ROLE_SISWA])){
+             return true;
+      } else {
+             return false;
+      }
+    }
+
+    
 }

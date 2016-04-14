@@ -12,6 +12,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use common\models\User;
 
 /**
  * Site controller
@@ -38,14 +39,29 @@ class SiteController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                     ],
+                    [
+                        'actions' => ['homepage'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+
+                     [
+                        'actions' => ['about'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                        'matchCallback' => function ($rule, $action) {
+                            return User::isUserAdmin(Yii::$app->user->identity->username);
+                        }
+                    
+                    ],
                 ],
             ],
-            'verbs' => [
+            /*'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
                 ],
-            ],
+            ],*/
         ];
     }
 
@@ -75,12 +91,21 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    /* karena kita mau mainpagenya beda2 buat yg udh login sm belom, jadinya kita bikin action buat register.php
+    disini dia bakalan manggil file register yg ada di folder layout
+    di file register itu udah ada <? content ?>
+    by that <? content ?>, di halaman register akan munculin tampilan yg dibikin di index.php
+    */
+    public function actionStart () {
+        $this->layout='register';
+        return $this->render('index');
+    }
+
 
     /*untuk manggil di webnya, pakai index, site (controllernya) trs nama actionnya
     misalnya actionnya Homepagesiswa maka nulisnya homepage-siswa*/
-    public function actionHomepageSiswa() {
-
-        return $this->render('siswa-homepage');
+    public function actionHomepage() {
+        return $this->render('homepage');
     }
 
     public function actionLihatProfil() {
@@ -99,16 +124,18 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        $this->layout='register';
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+           // return $this->goBack();
+            return $this->redirect(['homepage']);
         } else {
             return $this->render('login', [
-                'model' => $model,
+                'model' => $model
             ]);
         }
     }
@@ -121,8 +148,7 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
-        return $this->goHome();
+        return $this->actionLogin();
     }
 
     /**
@@ -165,6 +191,8 @@ class SiteController extends Controller
      */
     public function actionSignup()
     {
+
+         $this->layout='register';
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
@@ -173,7 +201,6 @@ class SiteController extends Controller
                 }
             }
         }
-
         return $this->render('signup', [
             'model' => $model,
         ]);

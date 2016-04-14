@@ -1,0 +1,1695 @@
+2016-04-13 17:16:38 [::1][4][ignp9olcdun26ki0hfudc4cgh6][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/views/layouts/main.php' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(392): yii\base\View->renderFile('/Applications/X...', Array, Object(frontend\controllers\SiteController))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\Controller->renderContent('\r\n<h1>Selamat d...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/controllers/SiteController.php(109): yii\base\Controller->render('homepage')
+#3 [internal function]: frontend\controllers\SiteController->actionHomepage()
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('homepage', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/homepage', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2016-04-13 17:16:38 [::1][4][ignp9olcdun26ki0hfudc4cgh6][info][application] $_GET = [
+    'r' => 'site/homepage'
+]
+
+$_COOKIE = [
+    '_csrf' => '287b4d964bcaa681dc72e69657f32694914d83b3141449dfa052359e4d6f82fda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FUaLa3TkpcPBbc4KscRYVn9vyaLIP6to\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => 'ignp9olcdun26ki0hfudc4cgh6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw5i1n8AAAEAADjfLJ8AAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_COOKIE' => '_csrf=287b4d964bcaa681dc72e69657f32694914d83b3141449dfa052359e4d6f82fda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FUaLa3TkpcPBbc4KscRYVn9vyaLIP6to%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=ignp9olcdun26ki0hfudc4cgh6'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '53186'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fhomepage'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Fhomepage'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460560598.54
+    'REQUEST_TIME' => 1460560598
+]
+2016-04-13 17:18:15 [::1][4][ignp9olcdun26ki0hfudc4cgh6][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-13 17:18:15 [::1][4][ignp9olcdun26ki0hfudc4cgh6][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => '287b4d964bcaa681dc72e69657f32694914d83b3141449dfa052359e4d6f82fda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FUaLa3TkpcPBbc4KscRYVn9vyaLIP6to\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => 'ignp9olcdun26ki0hfudc4cgh6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw5jN38AAAEAADjhylIAAAAL'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=287b4d964bcaa681dc72e69657f32694914d83b3141449dfa052359e4d6f82fda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FUaLa3TkpcPBbc4KscRYVn9vyaLIP6to%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=ignp9olcdun26ki0hfudc4cgh6'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flihat-profil'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '53195'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460560695.568
+    'REQUEST_TIME' => 1460560695
+]
+2016-04-13 17:24:20 [::1][4][ignp9olcdun26ki0hfudc4cgh6][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-13 17:24:20 [::1][4][ignp9olcdun26ki0hfudc4cgh6][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => '287b4d964bcaa681dc72e69657f32694914d83b3141449dfa052359e4d6f82fda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FUaLa3TkpcPBbc4KscRYVn9vyaLIP6to\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => 'ignp9olcdun26ki0hfudc4cgh6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw5kpH8AAAEAADjfLKAAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=287b4d964bcaa681dc72e69657f32694914d83b3141449dfa052359e4d6f82fda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FUaLa3TkpcPBbc4KscRYVn9vyaLIP6to%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=ignp9olcdun26ki0hfudc4cgh6'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '53196'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460561060.778
+    'REQUEST_TIME' => 1460561060
+]
+2016-04-13 17:24:22 [::1][4][ignp9olcdun26ki0hfudc4cgh6][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-13 17:24:22 [::1][4][ignp9olcdun26ki0hfudc4cgh6][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => '287b4d964bcaa681dc72e69657f32694914d83b3141449dfa052359e4d6f82fda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FUaLa3TkpcPBbc4KscRYVn9vyaLIP6to\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => 'ignp9olcdun26ki0hfudc4cgh6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw5kpn8AAAEAADjfLKEAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=287b4d964bcaa681dc72e69657f32694914d83b3141449dfa052359e4d6f82fda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FUaLa3TkpcPBbc4KscRYVn9vyaLIP6to%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=ignp9olcdun26ki0hfudc4cgh6'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '53196'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460561062.51
+    'REQUEST_TIME' => 1460561062
+]
+2016-04-14 10:19:57 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:19:57 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9SrQoFWZ8AAAjPqDgAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Fhomepage'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49672'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460621997.098
+    'REQUEST_TIME' => 1460621997
+]
+2016-04-14 10:29:08 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:29:08 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Html' not found' in /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/views/layouts/main.php:34
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-04-14 10:29:08 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9U0woFWZ8AAANh-fcAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49703'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622547.33
+    'REQUEST_TIME' => 1460622547
+]
+2016-04-14 10:30:12 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:12 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VFAoFWZ8AAAfnE8QAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49705'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622612.298
+    'REQUEST_TIME' => 1460622612
+]
+2016-04-14 10:30:18 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:17 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VGQoFWZ8AAAjPqDkAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49711'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622617.645
+    'REQUEST_TIME' => 1460622617
+]
+2016-04-14 10:30:24 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:24 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VIAoFWZ8AAAe93d8AAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49712'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622624.316
+    'REQUEST_TIME' => 1460622624
+]
+2016-04-14 10:30:33 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:33 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VKQoFWZ8AAAjQQgUAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622633.09
+    'REQUEST_TIME' => 1460622633
+]
+2016-04-14 10:30:34 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:34 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VKgoFWZ8AAAjQQgYAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622634.051
+    'REQUEST_TIME' => 1460622634
+]
+2016-04-14 10:30:34 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:34 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VKgoFWZ8AAAjQQgcAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622634.541
+    'REQUEST_TIME' => 1460622634
+]
+2016-04-14 10:30:34 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:34 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VKgoFWZ8AAAjQQggAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622634.726
+    'REQUEST_TIME' => 1460622634
+]
+2016-04-14 10:30:35 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:35 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VKwoFWZ8AAAjQQgkAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622635.004
+    'REQUEST_TIME' => 1460622635
+]
+2016-04-14 10:30:35 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:35 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VKwoFWZ8AAAjQQgoAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622635.165
+    'REQUEST_TIME' => 1460622635
+]
+2016-04-14 10:30:35 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:30:35 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VKwoFWZ8AAAjQQgsAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622635.456
+    'REQUEST_TIME' => 1460622635
+]
+2016-04-14 10:31:23 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:31:23 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VWwoFWZ8AAAe93eIAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622683.422
+    'REQUEST_TIME' => 1460622683
+]
+2016-04-14 10:31:24 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:31:24 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VXAoFWZ8AAAe93eMAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622684.446
+    'REQUEST_TIME' => 1460622684
+]
+2016-04-14 10:31:25 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:31:25 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VXQoFWZ8AAAe93eQAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622685.319
+    'REQUEST_TIME' => 1460622685
+]
+2016-04-14 10:31:27 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:31:27 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VXwoFWZ8AAAe93eUAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622687.775
+    'REQUEST_TIME' => 1460622687
+]
+2016-04-14 10:31:30 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:31:30 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9VYgoFWZ8AAAe93eYAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622690.483
+    'REQUEST_TIME' => 1460622690
+]
+2016-04-14 10:35:34 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:35:34 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9WVgoFWZ8AAAjOmWsAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49738'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622934.922
+    'REQUEST_TIME' => 1460622934
+]
+2016-04-14 10:35:36 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:35:36 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9WWAoFWZ8AAAjOmWwAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49738'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460622936.695
+    'REQUEST_TIME' => 1460622936
+]
+2016-04-14 10:39:12 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:39:12 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9XMAoFWZ8AAAjPqEIAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49752'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460623152.781
+    'REQUEST_TIME' => 1460623152
+]
+2016-04-14 10:39:14 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:39:14 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9XMgoFWZ8AAAjPqEMAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49752'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460623154.147
+    'REQUEST_TIME' => 1460623154
+]
+2016-04-14 10:39:37 [::1][4][7hsutgav9amdtda01knvon8d50][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:39:36 [::1][4][7hsutgav9amdtda01knvon8d50][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[4,\"g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB\",2592000]\";}'
+    'PHPSESSID' => '7hsutgav9amdtda01knvon8d50'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sikata/backend/web/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9XSAoFWZ8AAAe93ecAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=502619197fc5b30171cfb3a9f26da050a4fb8e911ff032f04b7991f3e3caafcca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22g1QQAQwMcvKEzOojQ4y1YGZWf-Jmg8tB%22%2C2592000%5D%22%3B%7D; PHPSESSID=7hsutgav9amdtda01knvon8d50'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49753'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460623176.922
+    'REQUEST_TIME' => 1460623176
+]
+2016-04-14 10:49:59 [::1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: frontend\controllers\SiteController::login()' in /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/controllers/SiteController.php(151): yii\base\Component->__call('login', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/controllers/SiteController.php(151): frontend\controllers\SiteController->login()
+#2 [internal function]: frontend\controllers\SiteController->actionLogout()
+#3 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('logout', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/sikata/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-14 10:49:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g\";}'
+    '_identity' => '4ef2e734d0c9fcc445f91b0faf9997af3985d409f163448279a77d631fbfdf45a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[3,\"tn7h9GI0zHb2cNqX3DwGBj0g2VBCPHPv\",2592000]\";}'
+    'PHPSESSID' => 'f4gan5bmm1hd6gdo1ud7k73vg0'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Vw9ZtgoFWZ8AAAgH3iQAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=f422900a08ed23d4c5ac6bb87037c1af67940d1f3b0e4bedd4781e9a2a851f92a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Wtzvfi_kIyveOZ59VPzMocKaMoE1zu_g%22%3B%7D; _identity=4ef2e734d0c9fcc445f91b0faf9997af3985d409f163448279a77d631fbfdf45a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22tn7h9GI0zHb2cNqX3DwGBj0g2VBCPHPv%22%2C2592000%5D%22%3B%7D; PHPSESSID=f4gan5bmm1hd6gdo1ud7k73vg0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-us'
+    'HTTP_REFERER' => 'http://localhost/sikata/frontend/web/index.php?r=site%2Fhomepage'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/sikata/frontend/web/index.php'
+    'REMOTE_PORT' => '49886'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/sikata/frontend/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/sikata/frontend/web/index.php'
+    'PHP_SELF' => '/sikata/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1460623798.825
+    'REQUEST_TIME' => 1460623798
+]

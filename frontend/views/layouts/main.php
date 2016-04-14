@@ -1,3 +1,11 @@
+<?php
+use yii\helpers\Html;
+use frontend\assets\AppAsset; 
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+use common\widgets\Alert; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,25 +36,31 @@
 
 <body>
 <div class="barAtas">
-	<img id="imgHeader" src="bta.png" alt="Logo BTA" ></img>
-	<button id="barAtas2" style="float:right;margin-right:5%;margin-top:16pt;">Logout</button>
-	</div>
+	<img src="bta.png" alt="Logo BTA" style="width:80px;height:60px;margin-left:2%;"></img>
+	<!--<a href="<?= Yii::$app->urlManager->createUrl("site/logout") ?>" data-method="POST"; style="float:right;margin-right:5%;margin-top:16pt;" class="btn btn-default">Logout</a>-->
+    
+    <?= Html::a('<div class=btn btn-default; style="float:right;margin-right:5%;margin-top:16pt;">Logout</div>', ['site/logout'], ['data-method' => 'post'])?>
+	
+    <!-- <a href="<?= Yii::$app->request->baseUrl; ?>" /logout" style="float:right;margin-right:5%;margin-top:16pt;">Logout</a> -->
+    </div>
 
     <div id="wrapper">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
+              <?php use common\models\User; ?>
             <ul class="sidebar-nav">
              <!--   <li class="sidebar-brand">
                     <a href="#">
                         Start Bootstrap
                     </a>
                 </li> -->
+                  <?php if (!\Yii::$app->user->isGuest && User::isUserSiswa(Yii::$app->user->identity->username)){ ?>
                 <li>
-                    <a href="http://localhost/sikataadv/frontend/web/index.php?r=site/homepage-siswa#">Beranda</a>
+                    <a href="homepage.php">Beranda</a>
                 </li>
                 <li>
-                    <a href="#">Profil</a>
+                    <a href="<?= Yii::$app->urlManager->createUrl("site/lihat-profil") ?>">Profil</a>
                 </li>
                 <li>
                     <a href="#">Nilai</a>
@@ -66,6 +80,8 @@
 				<li>
                     <a href="#">Pesan</a>
                 </li>
+
+                <?php } ?>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -74,7 +90,7 @@
      <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" style="margin-top:80px;">
                           <?= $content ?>
                       
                     </div>
